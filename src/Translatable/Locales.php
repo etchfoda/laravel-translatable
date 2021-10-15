@@ -1,10 +1,10 @@
 <?php
 
-namespace Dimsav\Translatable;
+namespace Etchfoda\Translatable;
 
 use ArrayAccess;
 use Illuminate\Contracts\Support\Arrayable;
-use Dimsav\Translatable\Exception\LocalesNotDefinedException;
+use Etchfoda\Translatable\Exception\LocalesNotDefinedException;
 use Illuminate\Contracts\Config\Repository as ConfigContract;
 use Illuminate\Contracts\Translation\Translator as TranslatorContract;
 

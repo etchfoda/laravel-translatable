@@ -1,4 +1,4 @@
-**This package [has been deprecated](https://twitter.com/dimsav/status/1140750099875860481). But worry not. You can use [Astrotomic/laravel-translatable](https://github.com/Astrotomic/laravel-translatable)**.
+**This package [has been deprecated](https://twitter.com/etchfoda/status/1140750099875860481). But worry not. You can use [Astrotomic/laravel-translatable](https://github.com/Astrotomic/laravel-translatable)**.
 
 ---
 
@@ -6,11 +6,11 @@ Laravel-Translatable
 ====================
 
 
-[![Total Downloads](https://poser.pugx.org/dimsav/laravel-translatable/downloads.svg)](https://packagist.org/packages/dimsav/laravel-translatable)
-[![Build Status](https://circleci.com/gh/dimsav/laravel-translatable.png?style=shield)](https://circleci.com/gh/dimsav/laravel-translatable)
-[![Code Coverage](https://scrutinizer-ci.com/g/dimsav/laravel-translatable/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/dimsav/laravel-translatable/?branch=master)
-[![Latest Stable Version](http://img.shields.io/packagist/v/dimsav/laravel-translatable.svg)](https://packagist.org/packages/dimsav/laravel-translatable)
-[![License](https://poser.pugx.org/dimsav/laravel-translatable/license.svg)](https://packagist.org/packages/dimsav/laravel-translatable)
+[![Total Downloads](https://poser.pugx.org/etchfoda/laravel-translatable/downloads.svg)](https://packagist.org/packages/etchfoda/laravel-translatable)
+[![Build Status](https://circleci.com/gh/etchfoda/laravel-translatable.png?style=shield)](https://circleci.com/gh/etchfoda/laravel-translatable)
+[![Code Coverage](https://scrutinizer-ci.com/g/etchfoda/laravel-translatable/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/etchfoda/laravel-translatable/?branch=master)
+[![Latest Stable Version](http://img.shields.io/packagist/v/etchfoda/laravel-translatable.svg)](https://packagist.org/packages/etchfoda/laravel-translatable)
+[![License](https://poser.pugx.org/etchfoda/laravel-translatable/license.svg)](https://packagist.org/packages/etchfoda/laravel-translatable)
 [![SensioLabsInsight](https://insight.sensiolabs.com/projects/c105358a-3211-47e8-b662-94aa98d1eeee/mini.png)](https://insight.sensiolabs.com/projects/c105358a-3211-47e8-b662-94aa98d1eeee)
 [![StyleCI](https://styleci.io/repos/16480576/shield)](https://styleci.io/repos/16480576)
 
@@ -77,6 +77,7 @@ This is a Laravel package for translatable models. Its goal is to remove the com
 
  Laravel  | Translatable
 :---------|:----------
+ 8.*      | 10.*
  5.8      | 9.*
  5.7      | 9.*
  5.6      | 9.*
@@ -102,13 +103,13 @@ This is a Laravel package for translatable models. Its goal is to remove the com
 Add the package in your composer.json by executing the command.
 
 ```bash
-composer require dimsav/laravel-translatable
+composer require etchfoda/laravel-translatable
 ```
 
 Next, add the service provider to `app/config/app.php`
 
 ```
-Dimsav\Translatable\TranslatableServiceProvider::class,
+Etchfoda\Translatable\TranslatableServiceProvider::class,
 ```
 
 ### Step 2: Migrations
@@ -137,7 +138,7 @@ Schema::create('country_translations', function(Blueprint $table)
 
 ### Step 3: Models
 
-1. The translatable model `Country` should [use the trait](http://www.sitepoint.com/using-traits-in-php-5-4/) `Dimsav\Translatable\Translatable`. 
+1. The translatable model `Country` should [use the trait](http://www.sitepoint.com/using-traits-in-php-5-4/) `Etchfoda\Translatable\Translatable`. 
 2. The convention for the translation model is `CountryTranslation`.
 
 
@@ -145,7 +146,7 @@ Schema::create('country_translations', function(Blueprint $table)
 // models/Country.php
 class Country extends Eloquent {
     
-    use \Dimsav\Translatable\Translatable;
+    use \Etchfoda\Translatable\Translatable;
     
     public $translatedAttributes = ['name'];
     protected $fillable = ['code'];
@@ -182,7 +183,7 @@ php artisan vendor:publish --tag=translatable
 
 Laravel 4.*
 ```bash
-php artisan config:publish dimsav/laravel-translatable
+php artisan config:publish etchfoda/laravel-translatable
 ```
 
 *Note: There isn't any restriction for the format of the locales. Feel free to use whatever suits you better, like "eng" instead of "en", or "el" instead of "gr".  The important is to define your locales and stick to them.*
@@ -206,7 +207,7 @@ To use a custom class as translation model, define the translation class (includ
 
 namespace MyApp\Models;
 
-use Dimsav\Translatable\Translatable;
+use Etchfoda\Translatable\Translatable;
 use Illuminate\Database\Eloquent\Model as Eloquent;
 
 class Country extends Eloquent
@@ -376,7 +377,7 @@ To use the magic properties, you have to define the property `$translatedAttribu
  ```php
  class Country extends Eloquent {
 
-     use \Dimsav\Translatable\Translatable;
+     use \Etchfoda\Translatable\Translatable;
 
      public $translatedAttributes = ['name'];
  }
@@ -511,11 +512,11 @@ Thanks to the community a few packages have been written to make usage of Transl
 
 #### I need some example code!
 
-Examples for all the package features can be found [in the code](https://github.com/dimsav/laravel-translatable/tree/master/tests/models) used for the [tests](https://github.com/dimsav/laravel-translatable/tree/master/tests).
+Examples for all the package features can be found [in the code](https://github.com/etchfoda/laravel-translatable/tree/master/tests/models) used for the [tests](https://github.com/etchfoda/laravel-translatable/tree/master/tests).
 
 #### I need help!
 
-Got any question or suggestion? Feel free to open an [Issue](https://github.com/dimsav/laravel-translatable/issues/new).
+Got any question or suggestion? Feel free to open an [Issue](https://github.com/etchfoda/laravel-translatable/issues/new).
 
 #### I want to help!
 
@@ -525,7 +526,7 @@ Also buy me a beer by making a [donation](#donations). ❤️
 
 #### I am getting collisions with other trait methods!
 
-Translatable is fully compatible with all kinds of Eloquent extensions, including Ardent. If you need help to implement Translatable with these extensions, see this [example](https://gist.github.com/dimsav/9659552).
+Translatable is fully compatible with all kinds of Eloquent extensions, including Ardent. If you need help to implement Translatable with these extensions, see this [example](https://gist.github.com/etchfoda/9659552).
 
 #### How do I migrate my existing table to use laravel-translatable?
 
@@ -631,6 +632,6 @@ This software has been crafted with attention and love.
 
 Show your love and support by sending bitcoin to this address: `167QC4XQ3acgbwVYWAdmS81jARCcVTWBXU`
 
-Or by sending to this PayPal address: `ds@dimsav.com`
+Or by sending to this PayPal address: `admin@etchfoda.com`
 
 ❤️ Thank you!

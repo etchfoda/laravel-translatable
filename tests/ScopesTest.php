@@ -1,7 +1,7 @@
 <?php
 
-use Dimsav\Translatable\Test\Model\Country;
-use Dimsav\Translatable\Test\Model\Vegetable;
+use Etchfoda\Translatable\Test\Model\Country;
+use Etchfoda\Translatable\Test\Model\Vegetable;
 
 class ScopesTest extends TestsBase
 {

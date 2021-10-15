@@ -1,11 +1,11 @@
 <?php
 
-use Dimsav\Translatable\Test\Model\City;
-use Dimsav\Translatable\Test\Model\Country;
-use Dimsav\Translatable\Test\Model\Vegetable;
-use Dimsav\Translatable\Test\Model\CityTranslation;
-use Dimsav\Translatable\Test\Model\CountryTranslation;
-use Dimsav\Translatable\Test\Model\VegetableTranslation;
+use Etchfoda\Translatable\Test\Model\City;
+use Etchfoda\Translatable\Test\Model\Country;
+use Etchfoda\Translatable\Test\Model\Vegetable;
+use Etchfoda\Translatable\Test\Model\CityTranslation;
+use Etchfoda\Translatable\Test\Model\CountryTranslation;
+use Etchfoda\Translatable\Test\Model\VegetableTranslation;
 
 class AddFreshSeeds
 {

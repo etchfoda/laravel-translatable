@@ -1,6 +1,6 @@
 <?php
 
-namespace Dimsav\Translatable\Test\Model;
+namespace Etchfoda\Translatable\Test\Model;
 
 use Illuminate\Database\Eloquent\Model as Eloquent;
 

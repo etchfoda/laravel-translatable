@@ -1,6 +1,6 @@
 <?php
 
-namespace Dimsav\Translatable;
+namespace Etchfoda\Translatable;
 
 use Illuminate\Support\ServiceProvider;
 

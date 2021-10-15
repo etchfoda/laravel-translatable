@@ -1,6 +1,6 @@
 <?php
 
-use Dimsav\Translatable\Locales;
+use Etchfoda\Translatable\Locales;
 
 class LocalesTest extends TestsBase
 {

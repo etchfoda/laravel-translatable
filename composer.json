@@ -1,9 +1,15 @@
 {
-    "name": "dimsav/laravel-translatable",
+    "name": "etchfoda/laravel-translatable",
     "description": "A Laravel package for multilingual models",
     "keywords": ["laravel", "translation", "language", "database"],
     "license": "MIT",
     "authors": [
+        {
+            "name": "Hesham Fouda",
+            "email": "admin@etchfoda.com",
+            "homepage": "http://heshamfouda.me",
+            "role": "Developer"
+        },
         {
             "name": "Dimitrios Savvopoulos",
             "email": "ds@dimsav.com",
@@ -18,18 +24,18 @@
         }
     ],
     "support": {
-        "issues": "https://github.com/dimsav/laravel-translatable/issues"
+        "issues": "https://github.com/etchfoda/laravel-translatable/issues"
     },
     "require": {
-        "php": ">=7.1.3",
-        "illuminate/support": "5.6.*|5.7.*|5.8.*"
+        "php": "^7.3|^8.0",
+        "illuminate/support": "8.*"
     },
     "require-dev": {
-        "orchestra/testbench": "3.6.*|3.7.*|3.8.*"
+        "orchestra/testbench": "6.*"
     },
     "autoload": {
         "psr-4": {
-            "Dimsav\\Translatable\\": "src/Translatable/"
+            "Etchfoda\\Translatable\\": "src/Translatable/"
         }
     },
     "autoload-dev": {
@@ -40,7 +46,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Dimsav\\Translatable\\TranslatableServiceProvider"
+                "Etchfoda\\Translatable\\TranslatableServiceProvider"
             ]
         }
     },
